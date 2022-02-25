@@ -20,7 +20,7 @@ function ModeBanner({
   setIsVisible,
 }: Props) {
   return (
-    <aside className="Settings" aria-hidden>
+    <div className="Settings" aria-hidden role="presentation">
       <fieldset className="Settings-Group">
         <legend>Display</legend>
         <div className="Settings-Item">
@@ -31,6 +31,8 @@ function ModeBanner({
             id="Settings-Mode"
             onChange={(event) => setMode(event.target.value as Mode)}
             value={mode}
+            tabIndex={-1}
+            role="none"
           >
             {Object.entries(Mode).map(([name, value]) => (
               <option key={value} value={value}>
@@ -45,6 +47,8 @@ function ModeBanner({
             type="checkbox"
             checked={isVisible}
             onChange={(event) => setIsVisible(event.target.checked)}
+            tabIndex={-1}
+            role="none"
           />
           <label
             className="Settings-CheckboxLabel"
@@ -63,6 +67,8 @@ function ModeBanner({
               type="checkbox"
               checked={isHostile(issue)}
               onChange={(event) => setIsHostile(issue, event.target.checked)}
+              tabIndex={-1}
+              role="none"
             />
             <label
               className="Settings-CheckboxLabel"
@@ -73,7 +79,7 @@ function ModeBanner({
           </div>
         ))}
       </fieldset>
-    </aside>
+    </div>
   );
 }
 

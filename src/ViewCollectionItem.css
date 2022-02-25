@@ -1,11 +1,19 @@
 .ViewCollectionItem {
   background-color: white;
   border: 1px solid lightgray;
-  box-shadow: 0 0 4px 1px lightgray;
+  box-shadow: rgb(31 31 31 / 12%) 0px 1px 6px, rgb(31 31 31 / 12%) 0px 1px 4px;
   display: flex;
   flex-flow: column nowrap;
   gap: 8px;
   height: 320px;
+  cursor: pointer;
+  transition: box-shadow 250ms ease;
+}
+
+.ViewCollectionItem:hover,
+.ViewCollectionItem:focus,
+.ViewCollectionItem:active {
+  box-shadow: rgb(31 31 31 / 16%) 0px 3px 10px, rgb(31 31 31 / 23%) 0px 3px 10px;
 }
 
 .ViewCollectionItem-Background {

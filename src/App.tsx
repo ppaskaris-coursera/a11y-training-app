@@ -101,6 +101,8 @@ linear-gradient(
   const setIsHostile = (issue: Issue, value: boolean) =>
     setHostility({ ...hostility, [issue]: value });
 
+  const noOutline = isHostile(Issue.NoOutline);
+
   return (
     <div className="App">
       <Settings
@@ -112,7 +114,11 @@ linear-gradient(
         setIsVisible={setIsVisible}
       />
       <div
-        className={cx("App-Main", !isVisible && "--hidden")}
+        className={cx(
+          "App-Main",
+          !isVisible && "--hidden",
+          noOutline && "--no-outline"
+        )}
         role={isHostile(Issue.NoLandmarkRole) ? undefined : "main"}
       >
         {mode === Mode.Edit && <EditPage />}

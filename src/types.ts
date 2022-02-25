@@ -13,6 +13,7 @@ export enum Issue {
   NoImageLabel = "No labels for icons/images",
   NoLandmarkRole = "No landmarks",
   NoListRole = "No list semantics",
+  NoOutline = "No focus/active outlines",
   NoPresentationRole = "No decorative element hiding",
   WrongElementOrder = "Wrong element order",
   WrongHeadingLevel = "Wrong heading levels",

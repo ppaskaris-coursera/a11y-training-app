@@ -3,3 +3,6 @@
   pointer-events: none;
   transform: translate(-100%, -100%);
 }
+.App-Main.--no-outline * {
+  outline: none !important;
+}

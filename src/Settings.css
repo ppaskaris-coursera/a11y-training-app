@@ -1,0 +1,26 @@
+.Settings {
+  background-color: lemonchiffon;
+  box-shadow: 0 0 6px 2px lightgray;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 16px;
+  padding: 16px;
+  position: fixed;
+  right: 16px;
+  top: 16px;
+  width: 320px;
+}
+
+.Settings-SettingGroup {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 8px;
+}
+
+.Settings-SelectLabel {
+  margin-right: 4px;
+}
+
+.Settings-CheckboxLabel {
+  margin-left: 4px;
+}

@@ -1,0 +1,53 @@
+.ViewCollection {
+  margin: 32px 0;
+  padding: 32px;
+}
+
+.ViewCollection:nth-child(2n + 1) {
+  background-color: #eee;
+}
+
+.ViewCollection-Header {
+  margin: 0 0 8px;
+  max-width: calc(100% - 320px - 32px);
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
+.ViewCollection-Heading {
+  font-size: 24px;
+  font-weight: 600;
+  flex: 1 1 auto;
+  order: 1;
+}
+
+.ViewCollection-Header .ViewCollection-ViewMore {
+  order: 2;
+}
+
+.ViewCollection-Description {
+  font-weight: 500;
+  margin: 8px 0 16px;
+  max-width: calc(100% - 320px);
+}
+
+.ViewCollection-Items {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 16px;
+  max-width: calc(100% - 320px);
+  margin: 16px 0;
+}
+
+.ViewCollection-Items .ViewCollectionItem {
+  flex: 1 1 33%;
+}
+
+.ViewCollection-ItemSpacer {
+  flex: 1 1 33%;
+}
+
+.ViewCollection-Footer {
+  margin-top: 16px;
+}

@@ -1,0 +1,38 @@
+.ViewCollectionItem {
+  background-color: white;
+  border: 1px solid lightgray;
+  box-shadow: 0 0 4px 1px lightgray;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 8px;
+  height: 320px;
+}
+
+.ViewCollectionItem-Background {
+  height: 150px;
+}
+
+.ViewCollectionItem-Name {
+  font-size: 24px;
+  font-weight: 500;
+  margin: 0 8px;
+}
+
+.ViewCollectionItem-Partner {
+  margin: 0 8px;
+}
+
+.ViewCollectionItem-Spacer {
+  flex-grow: 1;
+}
+
+.ViewCollectionItem-Tag {
+  align-self: flex-start;
+  border-radius: 16px;
+  font-size: 12px;
+  font-weight: 500;
+  margin: 0 8px 8px;
+  padding: 4px 8px;
+  color: white;
+  order: 1;
+}
